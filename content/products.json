@@ -1,0 +1,224 @@
+{
+  "items": [
+    {
+      "active": true,
+      "slug": "bactel",
+      "title": "Bactel",
+      "subtitle": "Biofungicida Especializado",
+      "image": "images/products/Bactel.png",
+      "image_alt": "Bactel",
+      "category": "",
+      "tags": [
+        "Biológico",
+        "Fungicida",
+        "Sustentável"
+      ],
+      "code": "",
+      "description": "O Bactel é um biofungicida especializado desenvolvido com tecnologia avançada para o controle eficiente de doenças fúngicas. Sua formulação inovadora oferece proteção sustentável às culturas, respeitando o meio ambiente e promovendo uma agricultura mais equilibrada.\n\nIdeal para programas de manejo integrado de doenças, o Bactel proporciona controle efetivo e duradouro, contribuindo para uma agricultura mais sustentável e produtiva.",
+      "specs": [],
+      "related": [],
+      "whatsapp_cta": "Solicitar Orçamento via WhatsApp",
+      "whatsapp_msg": "Olá! Gostaria de solicitar um orçamento para o produto Bactel."
+    },
+    {
+      "active": true,
+      "slug": "beauvel",
+      "title": "Beauvel",
+      "subtitle": "Inseticida Microbiológico",
+      "image": "images/products/beauvel-sem-fundo.png",
+      "image_alt": "Beauvel",
+      "category": "",
+      "tags": [
+        "Microbiológico",
+        "Sustentável",
+        "Eficaz"
+      ],
+      "code": "",
+      "description": "O Beauvel é um inseticida microbiológico de alta eficácia, desenvolvido com tecnologia avançada para o controle sustentável de pragas. Sua formulação inovadora oferece proteção eficiente às culturas, respeitando o meio ambiente e a saúde humana.\n\nIdeal para programas de manejo integrado de pragas, o Beauvel proporciona controle efetivo e duradouro, contribuindo para uma agricultura mais sustentável e produtiva.",
+      "specs": [],
+      "related": [],
+      "whatsapp_cta": "Solicitar Orçamento via WhatsApp",
+      "whatsapp_msg": "Olá! Gostaria de solicitar um orçamento para o produto Beauvel."
+    },
+    {
+      "active": true,
+      "slug": "beifort-k",
+      "title": "K+ORG NPK",
+      "subtitle": "Fertilizante NPK com base orgânica",
+      "image": "images/products/beifort-k-org-npk-1.png",
+      "image_alt": "K+ORG NPK",
+      "category": "",
+      "tags": [
+        "NPK",
+        "Base Orgânica",
+        "Alta Performance"
+      ],
+      "code": "KORG1NPK",
+      "description": "Código: KORG1NPK\n\nO K+ORG NPK é um fertilizante NPK com base orgânica, especialmente formulado para fornecer nutrição completa e equilibrada para suas culturas. Combina a eficiência dos nutrientes minerais com os benefícios da matéria orgânica, proporcionando nutrição imediata e de liberação gradual.\n\nAplicação no Solo: Aplicar conforme análise de solo e recomendação técnica, incorporando ao solo antes do plantio ou em cobertura durante o ciclo da cultura.\n\nAplicação Foliar: Diluir conforme recomendação técnica e aplicar preferencialmente nas primeiras horas da manhã ou final da tarde, evitando horários de alta temperatura.\n\nFertilizante organomineral completo\n\nFertilizante organomineral de alta performance",
+      "specs": [],
+      "related": [],
+      "whatsapp_cta": "Solicitar Orçamento via WhatsApp",
+      "whatsapp_msg": "Olá! Gostaria de solicitar um orçamento para o produto K+ORG NPK."
+    },
+    {
+      "active": true,
+      "slug": "beifort-nca",
+      "title": "NCA ORG",
+      "subtitle": "Fertilizante organomineral completo",
+      "image": "images/products/beifort-nca-org-4.png",
+      "image_alt": "NCA ORG",
+      "category": "",
+      "tags": [
+        "Organomineral",
+        "Completo",
+        "Certificado"
+      ],
+      "code": "NCA4ORG",
+      "description": "Código: NCA4ORG\n\nO NCA ORG é um fertilizante organomineral completo, desenvolvido para fornecer nutrição balanceada e sustentável para suas culturas. Sua formulação avançada combina nutrientes minerais com matéria orgânica de alta qualidade, promovendo não apenas o crescimento das plantas, mas também a melhoria da estrutura e fertilidade do solo.\n\nAplicação no Solo: Aplicar conforme análise de solo e recomendação técnica, incorporando ao solo antes do plantio ou em cobertura.\n\nAplicação Foliar: Diluir conforme recomendação técnica e aplicar preferencialmente nas primeiras horas da manhã ou final da tarde.\n\nFertilizante NPK com base orgânica\n\nFertilizante organomineral de alta performance",
+      "specs": [],
+      "related": [],
+      "whatsapp_cta": "Solicitar Orçamento via WhatsApp",
+      "whatsapp_msg": "Olá! Gostaria de solicitar um orçamento para o produto NCA ORG."
+    },
+    {
+      "active": true,
+      "slug": "biofoglia",
+      "title": "BioFoglia",
+      "subtitle": "Fertilizante Foliar Especializado",
+      "image": "images/products/biofoglia-5skh5nrj33.png",
+      "image_alt": "BioFoglia",
+      "category": "",
+      "tags": [
+        "Foliar",
+        "Bacillus",
+        "Carbono Orgânico"
+      ],
+      "code": "F5U9WNHZ8",
+      "description": "Código: F5U9WNHZ8\n\nFertilizante foliar com Bacillus subtilis e pumilus + carbono orgânico. Controle de fungos de parte aérea e rápida colonização do solo.\n\nSua formulação avançada garante máxima eficácia na aplicação foliar, promovendo desenvolvimento saudável e produtividade superior através do controle biológico de patógenos.",
+      "specs": [],
+      "related": [],
+      "whatsapp_cta": "Solicitar Orçamento via WhatsApp",
+      "whatsapp_msg": "Olá! Gostaria de solicitar um orçamento para o produto BioFoglia."
+    },
+    {
+      "active": true,
+      "slug": "biotrichomax",
+      "title": "BioTrichomax",
+      "subtitle": "Controle Biológico Eficiente",
+      "image": "images/products/BioTrichomax.png",
+      "image_alt": "BioTrichomax",
+      "category": "",
+      "tags": [
+        "Microbiológico",
+        "8 Cepas",
+        "Alta Concentração"
+      ],
+      "code": "8WNHZ5F9U",
+      "description": "Código: 8WNHZ5F9U\n\nMicrobiológico com maior concentração de colônias de Trichoderma do mercado. Formulado com 8 cepas das espécies Trichoderma harzianum, asperellum e koningiopsis. Promove raízes mais vigorosas, maior disponibilidade de nutrientes, proteção contra patógenos e uniformidade na lavoura.",
+      "specs": [],
+      "related": [],
+      "whatsapp_cta": "Solicitar Orçamento via WhatsApp",
+      "whatsapp_msg": "Olá! Gostaria de solicitar um orçamento para o produto BioTrichomax."
+    },
+    {
+      "active": true,
+      "slug": "btel",
+      "title": "Btel",
+      "subtitle": "Inseticida Microbiológico",
+      "image": "images/products/Btel.png",
+      "image_alt": "Btel",
+      "category": "",
+      "tags": [
+        "Microbiológico",
+        "Inseticida",
+        "Sustentável"
+      ],
+      "code": "",
+      "description": "O Btel é um inseticida microbiológico de alta eficácia, desenvolvido com tecnologia avançada para o controle sustentável de pragas. Sua formulação inovadora oferece proteção eficiente às culturas, respeitando o meio ambiente e a saúde humana.\n\nIdeal para programas de manejo integrado de pragas, o Btel proporciona controle efetivo e duradouro, contribuindo para uma agricultura mais sustentável e produtiva.",
+      "specs": [],
+      "related": [],
+      "whatsapp_cta": "Solicitar Orçamento via WhatsApp",
+      "whatsapp_msg": "Olá! Gostaria de solicitar um orçamento para o produto Btel."
+    },
+    {
+      "active": true,
+      "slug": "ecolife",
+      "title": "EcoLife",
+      "subtitle": "Fertilizante Foliar Orgânico",
+      "image": "images/products/ecolife-1litro.jpg",
+      "image_alt": "EcoLife",
+      "category": "",
+      "tags": [
+        "Orgânico",
+        "Foliar",
+        "Sustentável"
+      ],
+      "code": "2TQU3H4RF",
+      "description": "Código: 2TQU3H4RF\n\nO EcoLife é um fertilizante foliar orgânico de alta qualidade, desenvolvido para proporcionar nutrição completa e equilibrada às plantas através da aplicação foliar. Sua formulação orgânica garante máxima eficácia e resultados superiores de forma sustentável.\n\nIdeal para diversas culturas, o EcoLife promove o desenvolvimento saudável das plantas, melhora a absorção de nutrientes e aumenta significativamente a produtividade de forma natural.",
+      "specs": [],
+      "related": [],
+      "whatsapp_cta": "Solicitar Orçamento via WhatsApp",
+      "whatsapp_msg": "Olá! Gostaria de solicitar um orçamento para o produto EcoLife."
+    },
+    {
+      "active": true,
+      "slug": "kathari",
+      "title": "Kathari",
+      "subtitle": "Ácido Peracético P-150",
+      "image": "images/products/kathari.png",
+      "image_alt": "Kathari",
+      "category": "",
+      "tags": [
+        "Ácido Peracético",
+        "P-150",
+        "Sanitizante"
+      ],
+      "code": "",
+      "description": "O Kathari é um produto à base de ácido peracético P-150, desenvolvido com tecnologia avançada para sanitização e desinfecção. Sua formulação inovadora oferece eficácia superior na eliminação de microrganismos patogênicos.\n\nIdeal para programas de sanitização em diversas aplicações, o Kathari proporciona desinfecção efetiva e segura, contribuindo para um ambiente mais limpo e protegido.",
+      "specs": [],
+      "related": [],
+      "whatsapp_cta": "Solicitar Orçamento via WhatsApp",
+      "whatsapp_msg": "Olá! Gostaria de solicitar um orçamento para o produto Kathari."
+    },
+    {
+      "active": true,
+      "slug": "mesopelmix",
+      "title": "MesopelMix",
+      "subtitle": "Inseticida Microbiológico Dupla Ação",
+      "image": "images/products/MesopelMix.png",
+      "image_alt": "MesopelMix",
+      "category": "",
+      "tags": [
+        "Microbiológico",
+        "Dupla Ação",
+        "Eficaz"
+      ],
+      "code": "",
+      "description": "O MesopelMix é um inseticida microbiológico de dupla ação, desenvolvido com tecnologia avançada para o controle eficiente de pragas. Sua formulação inovadora combina múltiplos mecanismos de ação, oferecendo proteção superior às culturas de forma sustentável.\n\nIdeal para programas de manejo integrado de pragas, o MesopelMix proporciona controle efetivo e duradouro, contribuindo para uma agricultura mais sustentável e produtiva.",
+      "specs": [],
+      "related": [],
+      "whatsapp_cta": "Solicitar Orçamento via WhatsApp",
+      "whatsapp_msg": "Olá! Gostaria de solicitar um orçamento para o produto MesopelMix."
+    },
+    {
+      "active": true,
+      "slug": "terravitta",
+      "title": "TerraVitta",
+      "subtitle": "Fertilizante Organomineral Classe A",
+      "image": "images/products/terravitta-5l-fcsf92sqpx.png",
+      "image_alt": "TerraVitta",
+      "category": "",
+      "tags": [
+        "Organomineral",
+        "Alta Performance",
+        "Certificado"
+      ],
+      "code": "7Q4RF2TQU3H",
+      "description": "Código: 7Q4RF2TQU3H\n\nO TerraVitta é um fertilizante organomineral de alta performance, desenvolvido para proporcionar nutrição completa e equilibrada às plantas. Sua formulação avançada combina nutrientes orgânicos e minerais, garantindo máxima eficácia e resultados superiores.\n\nIdeal para diversas culturas, o TerraVitta promove o desenvolvimento saudável das plantas, melhora a estrutura do solo e aumenta significativamente a produtividade.",
+      "specs": [],
+      "related": [],
+      "whatsapp_cta": "Solicitar Orçamento via WhatsApp",
+      "whatsapp_msg": "Olá! Gostaria de solicitar um orçamento para o produto TerraVitta."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "conteudo"
+    label: "Conteúdo"
+    files:
+      - file: "content/products.json"
+        label: "Produtos"
+        name: "products"
+        fields:
+          - label: "Produtos"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Ativo", name: "active", widget: "boolean", default: true }
+              - { label: "Slug", name: "slug", widget: "string", hint: "sem espaços, ex: biofoglia" }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Subtítulo", name: "subtitle", widget: "string", required: false }
+              - { label: "Imagem", name: "image", widget: "image" }
+              - { label: "Alt da Imagem", name: "image_alt", widget: "string", required: false }
+              - { label: "Categoria", name: "category", widget: "string", required: false }
+              - { label: "Tags", name: "tags", widget: "list", required: false }
+              - { label: "Código", name: "code", widget: "string", required: false }
+              - { label: "Descrição", name: "description", widget: "markdown" }
+              - label: "Especificações Técnicas"
+                name: "specs"
+                widget: "list"
+                fields:
+                  - { label: "Título", name: "name", widget: "string" }
+                  - { label: "Valor", name: "value", widget: "string" }
+              - label: "Relacionados (slugs)"
+                name: "related"
+                widget: "list"
+                field: { label: "Slug", name: "slug", widget: "string" }
+              - { label: "CTA WhatsApp (texto)", name: "whatsapp_cta", widget: "string", default: "Solicitar Orçamento via WhatsApp" }
+              - { label: "Mensagem WhatsApp", name: "whatsapp_msg", widget: "string", required: false }
