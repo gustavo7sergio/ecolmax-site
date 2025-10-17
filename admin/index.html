@@ -8,5 +8,16 @@
 <body>
   <!-- Decap CMS -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+    (function () {
+      // Captura invite_token ou recovery_token, com ou sem barra após o #
+      var m = location.href.match(/[#?]\/?((invite_token|recovery_token)=[^&]+)/);
+      if (m) {
+        // Remove uma barra inicial do token, se houver (#/invite_token → #invite_token)
+        var param = m[1].replace(/^\//, '');
+        location.replace('/admin/#' + param);
+      }
+    })();
+  </script>
 </body>
 </html>
