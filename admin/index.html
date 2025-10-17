@@ -1,78 +1,40 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Admin | Ecolmax</title>
 
-  <!-- Netlify Identity (carrega primeiro) -->
+  <!-- Netlify Identity -->
   <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
   <script>
-    (function () {
-      // 1) Normaliza qualquer token que venha por query (?invite_token=...) para hash (/#invite_token=...)
-      //    Suporta: invite_token, recovery_token, confirmation_token, access_token
-      var url = new URL(window.location.href);
-      var searchParams = url.searchParams;
-      var tokenKey = ['invite_token', 'recovery_token', 'confirmation_token', 'access_token']
-        .find(function (k) { return searchParams.has(k); });
-
-      if (tokenKey) {
-        var tokenVal = searchParams.get(tokenKey);
-        // preserva outros fragmentos (se houver)
-        var newHash = url.hash ? (url.hash.replace(/^#/, '') + '&' + tokenKey + '=' + tokenVal) : (tokenKey + '=' + tokenVal);
-        // limpa a query e joga o token para o hash
-        url.search = '';
-        url.hash = '#' + newHash;
-        return window.location.replace(url.toString());
+    // Corrige links de convite e recuperação
+    (function() {
+      const params = new URLSearchParams(window.location.search);
+      const inviteToken = params.get("invite_token");
+      const recoveryToken = params.get("recovery_token");
+      if (inviteToken) {
+        window.location.replace(`/admin/#invite_token=${inviteToken}`);
+      } else if (recoveryToken) {
+        window.location.replace(`/admin/#recovery_token=${recoveryToken}`);
       }
-
-      // 2) Alguns convites chegam como /#invite_token=... já corretos. Nada a fazer aqui.
     })();
 
-    // 3) Quando o widget carregar, lidamos com init/login e abrimos automaticamente se houver token
-    document.addEventListener('DOMContentLoaded', function () {
-      // Garantimos que o objeto exista
-      if (!window.netlifyIdentity) return;
-
-      // Inicializa explicitamente (às vezes ajuda na abertura automática do modal)
-      try { window.netlifyIdentity.init(); } catch (e) {}
-
-      var hasInviteLike =
-        /invite_token=/.test(location.hash) ||
-        /recovery_token=/.test(location.hash) ||
-        /confirmation_token=/.test(location.hash) ||
-        /access_token=/.test(location.hash);
-
-      // Abre o modal automaticamente se houver token no hash
-      if (hasInviteLike) {
-        // Pequeno delay para garantir que o widget já inicializou
-        setTimeout(function () {
-          try { window.netlifyIdentity.open(); } catch (e) {}
-        }, 200);
-      }
-
-      // Recarrega após login para montar o CMS autenticado
-      window.netlifyIdentity.on('login', function () {
-        window.location.reload();
+    // Inicializa o widget de login
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on('init', user => {
+        if (!user) {
+          window.netlifyIdentity.on('login', () => {
+            document.location.href = '/admin/';
+          });
+        }
       });
-
-      // Opcional: após logout, volta limpo pro /admin
-      window.netlifyIdentity.on('logout', function () {
-        window.location.href = '/admin/';
-      });
-    });
+    }
   </script>
 
-  <!-- Decap CMS (carregar por último) -->
+  <!-- Decap CMS -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-
-  <!-- Botão de fallback (aparece só se precisar abrir manualmente) -->
-  <div style="position:fixed;bottom:16px;right:16px;font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial;">
-    <button onclick="window.netlifyIdentity && window.netlifyIdentity.open()" style="padding:10px 14px;border:1px solid #ccc;border-radius:8px;background:#fff;cursor:pointer">
-      Abrir login
-    </button>
-  </div>
 </body>
 </html>
