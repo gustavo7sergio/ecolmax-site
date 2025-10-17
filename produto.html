@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Produto | EcolMax</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img src="images/Logobranca.png" alt="EcolMax">
+        </a>
+        <ul class="nav-menu">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="index.html#sobre">Sobre Nós</a></li>
+          <li><a class="nav-link" href="index.html#produtos">Produtos</a></li>
+          <li><a class="nav-link" href="index.html#contato">Contato</a></li>
+        </ul>
+        <div class="nav-contact">
+          <a href="tel:(19)3802-4508" class="contact-phone"><i class="fas fa-phone"></i> (19) 3802-4508</a>
+          <a class="whatsapp-btn" href="https://wa.me/5519983480220" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="product-hero-gradient">
+    <div class="container">
+      <div class="product-hero-content">
+        <div class="product-info-left">
+          <h1 id="p-title">Produto</h1>
+          <p class="product-subtitle" id="p-subtitle"></p>
+          <div class="product-badges" id="p-tags"></div>
+          <div class="whatsapp-section">
+            <h3>Solicite seu Orçamento</h3>
+            <a id="p-whats" class="whatsapp-cta" href="#" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+              Solicitar Orçamento via WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="product-image-right">
+          <div class="product-image-container">
+            <img id="p-image" class="product-img" src="" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-details">
+    <div class="container">
+      <div class="product-info">
+        <h2>Sobre o Produto</h2>
+        <p id="p-code"></p>
+        <div id="p-description" class="product-desc"></div>
+
+        <div class="product-specs">
+          <h3>Especificações Técnicas</h3>
+          <ul id="p-specs"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="related-products">
+    <div class="container">
+      <h2>Produtos Relacionados</h2>
+      <div class="product-grid" id="related-grid"></div>
+    </div>
+  </section>
+
+  <script>
+  function getParam(name){
+    const url = new URL(window.location.href);
+    return url.searchParams.get(name);
+  }
+  async function loadProduct(){
+    const slug = getParam('slug');
+    const res = await fetch('content/products.json');
+    const data = await res.json();
+    const item = (data.items || []).find(i => i.slug === slug && i.active !== false);
+    if(!item){
+      document.getElementById('p-title').textContent = 'Produto não encontrado';
+      return;
+    }
+    document.getElementById('p-title').textContent = item.title || '';
+    document.getElementById('p-subtitle').textContent = item.subtitle || '';
+    const tagsWrap = document.getElementById('p-tags');
+    tagsWrap.innerHTML = '';
+    (item.tags || []).forEach(t => {
+      const span = document.createElement('span');
+      span.className = 'product-badge';
+      span.textContent = t;
+      tagsWrap.appendChild(span);
+    });
+    const img = document.getElementById('p-image');
+    img.src = item.image || '';
+    img.alt = item.image_alt || item.title || '';
+    const whats = document.getElementById('p-whats');
+    const msg = encodeURIComponent(item.whatsapp_msg || ('Olá! Gostaria de solicitar um orçamento para o produto ' + (item.title||'')));
+    whats.href = 'https://wa.me/5519983480220?text=' + msg;
+    whats.innerHTML = '<i class="fab fa-whatsapp"></i> ' + (item.whatsapp_cta || 'Solicitar Orçamento via WhatsApp');
+
+    // código
+    const pcode = document.getElementById('p-code');
+    pcode.textContent = item.code ? ('Código: ' + item.code) : '';
+
+    // descrição (markdown simples -> <p> por que já virá como texto)
+    const pdesc = document.getElementById('p-description');
+    pdesc.innerHTML = '';
+    (item.description || '').split(/\n\n+/).forEach(par => {
+      if(par.trim()){
+        const p = document.createElement('p');
+        p.textContent = par.trim();
+        pdesc.appendChild(p);
+      }
+    });
+
+    // specs
+    const ul = document.getElementById('p-specs');
+    ul.innerHTML = '';
+    (item.specs || []).forEach(s => {
+      const li = document.createElement('li');
+      li.innerHTML = '<strong>' + (s.name||'') + ':</strong> ' + (s.value||'');
+      ul.appendChild(li);
+    });
+
+    // relacionados
+    const relatedSlugs = (item.related || []).map(r => typeof r === 'string' ? r : r.slug);
+    let related = [];
+    if(relatedSlugs && relatedSlugs.length){
+      related = data.items.filter(i => relatedSlugs.includes(i.slug));
+    } else {
+      // fallback: por tags
+      related = data.items.filter(i => i.slug !== item.slug && (i.tags||[]).some(t => (item.tags||[]).includes(t))).slice(0,4);
+    }
+    const grid = document.getElementById('related-grid');
+    grid.innerHTML = '';
+    related.forEach(r => {
+      const card = document.createElement('a');
+      card.href = 'produto.html?slug=' + r.slug;
+      card.className = 'product-card';
+      card.innerHTML = `
+        <img src="${r.image}" alt="${r.image_alt||r.title||''}"/>
+        <h3>${r.title}</h3>
+        <p>${r.subtitle||''}</p>
+      `;
+      grid.appendChild(card);
+    });
+  }
+  loadProduct();
+  </script>
+</body>
+</html>
