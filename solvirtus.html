@@ -1,90 +1,40 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Solvirtus | Ecolmax</title>
-
-  <!-- CSS principal do site -->
-  <link rel="stylesheet" href="styles.css" />
-
-  <!-- Fonte e ícones (se usados nas outras páginas) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-</head>
-
-<body>
-  <!-- Header (igual aos outros arquivos de produto) -->
-  <header class="site-header">
-    <div class="container header-content">
-      <a class="logo" href="index.html">
-        <img src="images/Logobranca.png" alt="Ecolmax" style="height: 40px" />
-      </a>
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="produtos.html" class="active">Produtos</a>
-        <a href="#contato">Contato</a>
-      </nav>
+<!-- Hero do Produto -->
+<section class="product-hero">
+  <div class="container product-hero__grid">
+    <!-- Imagem do produto -->
+    <div class="product-hero__image">
+      <img src="images/products/solvirtus.png" alt="Solvirtus">
     </div>
-  </header>
 
-  <!-- Hero do Produto -->
-  <section class="product-hero">
-    <div class="container product-hero__grid">
-      <!-- Imagem do produto -->
-      <div class="product-hero__image">
-        <!-- Troque para images/products/solvirtus.png quando quiser padronizar -->
-        <img
-          src="images/uploads/chatgpt-image-18-de-out.-de-2025-10_15_23.png"
-          alt="Solvirtus"
-          style="max-width: 520px; width: 100%; height: auto; object-fit: contain;"
-        />
+    <!-- Conteúdo -->
+    <div class="product-hero__info">
+      <h1>Solvirtus</h1>
+      <h4>Protetor solar para plantas</h4>
+
+      <p>
+        SOLVIRTUS é um protetor solar vegetal à base de silicatos extra purificados,
+        desenvolvido para refletir os raios ultravioletas e filtrar os raios infravermelhos,
+        protegendo folhas e frutos contra o estresse térmico e queimaduras.
+        Indicado para diversas culturas como tomate, batata, soja, milho, hortaliças,
+        frutas cítricas, café e ornamentais.
+      </p>
+
+      <div class="product-cta">
+        <a class="btn btn-primary"
+           href="https://wa.me/551938024508?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20produto%20Solvirtus">
+          Solicitar orçamento no WhatsApp
+        </a>
+        <a class="btn btn-secondary" href="produtos.html">Voltar para a lista</a>
       </div>
 
-      <!-- Informações do produto -->
-      <div class="product-hero__info">
-        <h1>Solvirtus</h1>
-        <h3>Protetor solar para plantas</h3>
-
-        <p><strong>SOLVIRTUS</strong> é um protetor solar vegetal à base de silicatos extra purificados, desenvolvido para refletir os raios ultravioletas e filtrar os raios infravermelhos, protegendo folhas e frutos contra o estresse térmico e queimaduras.</p>
-
-        <p>Indicado para diversas culturas como tomate, batata, soja, milho, hortaliças, frutas cítricas, café e ornamentais.</p>
-
-        <!-- Botões de ação -->
-        <div class="product-cta">
-          <a class="btn btn-primary" href="https://wa.me/5519983024508?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20produto%20Solvirtus."
-             target="_blank" rel="noopener">Solicitar orçamento no WhatsApp</a>
-          <a class="btn btn-secondary" href="produtos.html">Voltar para a lista</a>
-        </div>
-
-        <!-- Especificações (se desejar) -->
-        <div class="product-specs">
-          <h4>Benefícios</h4>
-          <ul>
-            <li>Protege folhas e frutos contra queimaduras e estresse térmico</li>
-            <li>Ajuda a manter a produtividade em altas temperaturas</li>
-            <li>Compatível com diferentes culturas</li>
-          </ul>
-        </div>
+      <div class="product-benefits">
+        <h5>Benefícios</h5>
+        <ul>
+          <li>Protege folhas e frutos contra queimaduras e estresse térmico</li>
+          <li>Ajuda a manter a produtividade em altas temperaturas</li>
+          <li>Compatível com diferentes culturas</li>
+        </ul>
       </div>
     </div>
-  </section>
-
-  <!-- Seção extra (opcional) -->
-  <section class="product-details">
-    <div class="container">
-      <h2>Como aplicar</h2>
-      <p>A aplicação regular de Solvirtus contribui para a sanidade das culturas, melhora o pegamento de flores e frutos e potencializa a qualidade final da produção.</p>
-    </div>
-  </section>
-
-  <!-- Footer (igual aos outros arquivos) -->
-  <footer class="site-footer" id="contato">
-    <div class="container footer-content">
-      <div class="footer-section">
-        <p>&copy; Ecolmax — Todos os direitos reservados</p>
-      </div>
-    </div>
-  </footer>
-</body>
-</html>
+  </div>
+</section>
