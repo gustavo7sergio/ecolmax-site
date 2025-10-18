@@ -2,6 +2,18 @@
   "items": [
     {
       "whatsapp_cta": "Solicitar Orçamento via WhatsApp",
+      "image_alt": "Solvirtus",
+      "active": true,
+      "slug": "solvirtus",
+      "whatsapp_msg": "Olá! Gostaria de solicitar um orçamento para o produto Solvirtus",
+      "subtitle": "Protetor Solar para plantas",
+      "title": "Solvirtus",
+      "tags": [],
+      "image": "/images/uploads/chatgpt-image-18-de-out.-de-2025-10_15_23.png",
+      "description": "**SOLVIRTUS – Proteção solar vegetal para cultivos mais fortes**\n\n**SOLVIRTUS** é um protetor solar vegetal à base de silicatos extra purificados, desenvolvido para refletir os raios ultravioleta e filtrar os raios infravermelhos, protegendo folhas e frutos contra o estresse térmico e queimaduras. Com formulação em pó molhável, é compatível com misturas em tanque e não deixa resíduos visíveis nas plantas.\n\nA aplicação regular de SOLVIRTUS contribui para a sanidade das culturas, melhora o pegamento de flores e frutos e potencializa a qualidade final da produção. É indicado para diversas culturas como tomate, batata, soja, milho, hortaliças, frutas cítricas, café e ornamentais.\n\nEntre os principais benefícios, destaca-se a redução do estresse térmico em dias quentes, a proteção contra queimaduras solares em folhas e frutos, o favorecimento do pegamento e da qualidade dos grãos e frutos. Além disso, o produto não deixa resíduos visíveis na planta, é compatível com outros produtos na calda de pulverização e pode ser aplicado com segurança em todas as fases do cultivo.\n\nO modo de uso é via aplicação foliar, com dosagens específicas para cada cultura. A recomendação média é de 2 a 6 kg por hectare, conforme o estágio e tipo de planta. Para um plano de aplicação personalizado, consulte a ficha técnica ou um técnico da EcolMax.\n\nA composição do produto inclui 95% de silicatos compostos extra purificados, 2% de aditivos e 3% de inertes. O produto tem validade de 36 meses e está disponível em sacos de 20 kg. É isento de registro no MAPA, conforme a legislação vigente."
+    },
+    {
+      "whatsapp_cta": "Solicitar Orçamento via WhatsApp",
       "image_alt": "Bactel",
       "active": true,
       "related": [],
@@ -219,18 +231,6 @@
       "image": "images/products/terravitta-5l-fcsf92sqpx.png",
       "description": "Código: 7Q4RF2TQU3H\n\nO TerraVitta é um fertilizante organomineral de alta performance, desenvolvido para proporcionar nutrição completa e equilibrada às plantas. Sua formulação avançada combina nutrientes orgânicos e minerais, garantindo máxima eficácia e resultados superiores.\n\nIdeal para diversas culturas, o TerraVitta promove o desenvolvimento saudável das plantas, melhora a estrutura do solo e aumenta significativamente a produtividade.",
       "category": ""
-    },
-    {
-      "whatsapp_cta": "Solicitar Orçamento via WhatsApp",
-      "image_alt": "Solvirtus",
-      "active": true,
-      "slug": "solvirtus",
-      "whatsapp_msg": "Olá! Gostaria de solicitar um orçamento para o produto Solvirtus",
-      "subtitle": "Protetor Solar para plantas",
-      "title": "Solvirtus",
-      "tags": [],
-      "image": "/images/uploads/chatgpt-image-18-de-out.-de-2025-10_15_23.png",
-      "description": "**SOLVIRTUS – Proteção solar vegetal para cultivos mais fortes**\n\n**SOLVIRTUS** é um protetor solar vegetal à base de silicatos extra purificados, desenvolvido para refletir os raios ultravioleta e filtrar os raios infravermelhos, protegendo folhas e frutos contra o estresse térmico e queimaduras. Com formulação em pó molhável, é compatível com misturas em tanque e não deixa resíduos visíveis nas plantas.\n\nA aplicação regular de SOLVIRTUS contribui para a sanidade das culturas, melhora o pegamento de flores e frutos e potencializa a qualidade final da produção. É indicado para diversas culturas como tomate, batata, soja, milho, hortaliças, frutas cítricas, café e ornamentais.\n\nEntre os principais benefícios, destaca-se a redução do estresse térmico em dias quentes, a proteção contra queimaduras solares em folhas e frutos, o favorecimento do pegamento e da qualidade dos grãos e frutos. Além disso, o produto não deixa resíduos visíveis na planta, é compatível com outros produtos na calda de pulverização e pode ser aplicado com segurança em todas as fases do cultivo.\n\nO modo de uso é via aplicação foliar, com dosagens específicas para cada cultura. A recomendação média é de 2 a 6 kg por hectare, conforme o estágio e tipo de planta. Para um plano de aplicação personalizado, consulte a ficha técnica ou um técnico da EcolMax.\n\nA composição do produto inclui 95% de silicatos compostos extra purificados, 2% de aditivos e 3% de inertes. O produto tem validade de 36 meses e está disponível em sacos de 20 kg. É isento de registro no MAPA, conforme a legislação vigente."
     }
   ]
 }
